@@ -49,7 +49,7 @@ builder.Services.AddSwaggerGen(options =>
         Description = "A simple example ASP.NET Core Web API",
         Contact = new()
         {
-            Name = "Pattarapon ",
+            Name = "Pattarapon Thongsri ",
             Email = "Pattarapon.thongsri@gmail.com",
             Url = new Uri("https://www.linkedin.com/in/pattarapon-thongsri-927b62136/"),
         },

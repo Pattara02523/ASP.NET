@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyAPI</name>
+    </assembly>
+    <members>
+        <member name="M:MyAPI.Controllers.Author2Controller.GetAuthors">
+            <summary>
+            สรุป: เมธอด GET สำหรับดึงข้อมูล Author ทั้งหมด
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.Author2Controller.GetAuthors(System.Int32)">
+            <summary>
+            สรุป: เมธอด GET สำหรับค้นหา Author โดยใช้ authorId
+            </summary>
+            <param name="authorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.AuthorController.GetAuthors">
+            <summary>
+            สรุป: เมธอด GET สำหรับดึงข้อมูล Author ทั้งหมด
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.AuthorController.GetAuthors(System.Int32)">
+            <summary>
+            สรุป: เมธอด GET สำหรับค้นหา Author โดยใช้ authorId
+            </summary>
+            <param name="authorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.AuthorController.GetAuthors(System.String,System.String)">
+            <summary>
+            สรุป: เมธอด GET สำหรับค้นหา Author โดยใช้ mainCategory และ searchQuery
+            </summary>
+            <param name="mainCategory"></param>
+            <param name="searchQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.AuthorController.CreateAuthor(MyAPI.Dtos.AuthorCreateDto,Asp.Versioning.ApiVersion)">
+            <summary>
+            สรุป: เมธอด POST สำหรับสร้าง Author ใหม่
+            </summary>
+            <param name="author"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.AuthorController.UpdateAuthor(System.Int32,MyAPI.Dtos.AuthorCreateDto)">
+            <summary>
+            เมธอด PUT สำหรับอัปเดตข้อมูล Author ที่มีอยู่
+            </summary>
+            <param name="authorId"></param>
+            <param name="author"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.AuthorController.DeleteAuthor(System.Int32)">
+            <summary>
+            เมธอด DELETE สำหรับลบ Author โดยใช้ authorId
+            </summary>
+            <param name="authorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.CourseController.GetCourses(System.Int32)">
+            <summary>
+            สรุป: เมธอด GET สำหรับดึงข้อมูล Course ของ Author ที่ระบุโดย authorId
+            </summary>
+            <param name="authorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.CourseController.GetCourse(System.Int32,System.Int32)">
+            <summary>
+            เมธอด GET สำหรับค้นหา Course โดยใช้ courseId ของ Author ที่ระบุโดย authorId
+            </summary>
+            <param name="authorId"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.CourseController.CreateCourse(System.Int32,MyAPI.Dtos.CourseCreateDto)">
+            <summary>
+            เมธอด POST สำหรับสร้าง Course ใหม่สำหรับ Author ที่ระบุโดย authorId
+            </summary>
+            <param name="authorId"></param>
+            <param name="course"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.CourseController.UpdateCourse(System.Int32,System.Int32,MyAPI.Dtos.CourseCreateDto)">
+            <summary>
+            เมธอด PUT สำหรับอัปเดตข้อมูล Course ที่มีอยู่สำหรับ Author ที่ระบุโดย authorId
+            </summary>
+            <param name="authorId"></param>
+            <param name="courseId"></param>
+            <param name="course"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.CourseController.PartiallyUpdateCourse(System.Int32,System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{MyAPI.Models.Course})">
+            <summary>
+            เมธอด PATCH สำหรับอัปเดตบางส่วนของ Course ที่มีอยู่สำหรับ Author ที่ระบุโดย authorId
+            </summary>
+            <param name="authorId"></param>
+            <param name="courseId"></param>
+            <param name="patchDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Controllers.CourseController.DeleteCourse(System.Int32,System.Int32)">
+            <summary>
+            เมธอด DELETE สำหรับลบ Course ที่มีอยู่สำหรับ Author ที่ระบุโดย authorId 
+            </summary>
+            <param name="authorId"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyAPI.Extensions.Util.GetCurrentAge(System.DateTimeOffset)">
+            <summary>
+            คำนวณอายุจากวันเกิด
+            </summary>
+            <param name="dateTimeOffset"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MyAPI.Migrations.initial_database">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.initial_database.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.initial_database.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.initial_database.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyAPI.Migrations.updata_author_course">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.updata_author_course.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.updata_author_course.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.updata_author_course.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyAPI.Migrations.insert_author">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.insert_author.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.insert_author.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.insert_author.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyAPI.Migrations.insert_course">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.insert_course.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.insert_course.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.insert_course.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyAPI.Migrations.create_table_users">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.create_table_users.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.create_table_users.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyAPI.Migrations.create_table_users.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

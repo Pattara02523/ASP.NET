@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "MyAPI\\MyAPI.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "WebApp\\WebApp.csproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
+  }
+]
